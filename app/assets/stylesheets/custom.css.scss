@@ -8,3 +8,15 @@
 .col-md-3:nth-child(4n+1) {
   clear: left;
 }
+
+
+.jumbotron {
+    background: -webkit-linear-gradient(90deg, #eef2f3 10%, #8e9eab 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #eef2f3 10%, #8e9eab 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #eef2f3 10%, #8e9eab 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #eef2f3 10%, #8e9eab 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #eef2f3 10%, #8e9eab 90%); /* W3C */
+  h1, h2 {
+    font-family: guardian-egyptt, georgia, serif;
+  }
+}
