@@ -2,12 +2,12 @@ class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   def seller
-    @listings = Listing.where(user: current_user).order("created_at DESC")
+    @listings = Listing.where(user: current_user)
   end
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all.order("created_at DESC")
+    @listings = Listing.all
   end
 
   # GET /listings/1
