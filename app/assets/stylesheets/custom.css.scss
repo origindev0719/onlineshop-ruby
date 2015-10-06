@@ -2,3 +2,9 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+// Fix bad view when add more than 4 products
+// Not understand yet
+.col-md-3:nth-child(4n+1) {
+  clear: left;
+}
