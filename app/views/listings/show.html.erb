@@ -1,6 +1,11 @@
-<div class="container">
-    <%= image_tag @listing.image.url(:medium) %>
-    
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumnail">
+      <%= image_tag @listing.image.url(:medium) %>
+    </div>
+  </div>
+  
+  <div class="col-md-6">
     <p>
       <strong>Name:</strong>
       <%= @listing.name %>
@@ -13,9 +18,14 @@
     
     <p>
       <strong>Price:</strong>
-      <%= @listing.price %>
+      <%= number_to_currency(@listing.price) %>
     </p>
     
+    <div class="text-center">
+      <%= link_to "Buy it now","#", class: "btn btn-primary" %>
+    </div>
+    
+  </div>
+</div>    
     <%= link_to 'Edit', edit_listing_path(@listing) %> |
     <%= link_to 'Back', listings_path %>
-</div>
