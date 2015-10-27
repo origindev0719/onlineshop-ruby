@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :listings
+  resources :users
   
   get 'seller' =>"listings#seller"
   
