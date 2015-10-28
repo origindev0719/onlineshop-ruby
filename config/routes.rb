@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  
   devise_for :users
-  resources :listings
+  resources :listings do
+    resources :orders
+  end
+  
+  resources :users
   
   get 'seller' =>"listings#seller"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
   
   root 'listings#index'
   # The priority is based upon order of creation: first created -> highest priority.
