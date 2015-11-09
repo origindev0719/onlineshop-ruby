@@ -1,14 +1,15 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-  
-<div class="col-xs-4 panel">
-  <div class= "panel-primary" placeholder=".col-xs-4">
+<div class= "container-fluid">
+<div class= "row">
+<div class= "col-md-3">
+  <div class= "panel panel-primary">
     <div class="panel-heading">
       <h2>Sign up</h2>
     </div>
   
     <div class="panel-body">
-      <div class="field form-group">
+      <div class="field form-group" >
         <%= f.label :name %><br />
         <%= f.text_field :name, autofocus: true, class: 'form-control' %>
       </div>
@@ -36,7 +37,9 @@
       </div>
     </div>
     <% end %>
-  <div>
+  </div>
+</div>
+</div>
 </div>
 
 <%= render "devise/shared/links" %>
