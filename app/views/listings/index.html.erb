@@ -1,23 +1,24 @@
 <div class="jumbotron">
-  <h1>You need, we give.</h1>
-  <h2>Buy anything you want in a click</h2>
-</div>
-
-<div class="row">
-  <% @listings.each do |listing| %>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <%= link_to(image_tag(listing.image.url(:medium)), listing) %>
-        <div class="caption">
-          <h3><%= listing.name %></h3>
-          <p><%= number_to_currency(listing.price) %></p>
-          <p><%= "Sold by #{listing.user.name}" %></p>
+    <h1>You need, we give.</h1>
+    <h2>Buy anything you want in a click</h2>
+  </div>
+<div class="center">
+  <div class="row">
+    <% @listings.each do |listing| %>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= link_to(image_tag(listing.image.url(:medium)), listing) %>
+          <div class="caption">
+            <h3><%= listing.name %></h3>
+            <p><%= number_to_currency(listing.price) %></p>
+            <p><%= "Sold by #{listing.user.name}" %></p>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
+  <br>
+  <% if user_signed_in? %>
+    <%= link_to 'New Listing', new_listing_path %>
+  <%end%>
 </div>
-<br>
-<% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path %>
-<%end%>
