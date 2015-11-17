@@ -1,15 +1,14 @@
 <div class="row">
   <div class="col-md-6">
-    <div class="thumnail">
-      <%= image_tag @listing.image.url(:medium) %>
+    <div class="thumbnail">
+      <%= image_tag @listing.image.url%>
     </div>
   </div>
   
   <div class="col-md-6">
-    <p>
-      <strong>Name:</strong>
+    <h3>
       <%= @listing.name %>
-    </p>
+    </h3>
     
     <p>
       <strong>Description:</strong>
@@ -26,9 +25,7 @@
     </div>
     
   </div>
-</div>
-    <%if (user_signed_in?) && (current_user == @listing.user) %>
-      <%= link_to 'Edit', edit_listing_path(@listing) %> |
-      <%= link_to 'Destroy', @listing, method: :delete, data: { confirm: 'Are you sure?' } %> |
-    <% end %>
-    <%= link_to 'Back', listings_path %>
+</div>    
+    <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %> |
+    <%= link_to 'Back', listings_path, class: "btn btn-link" %>
+>>>>>>> login_view
