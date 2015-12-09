@@ -1,0 +1,24 @@
+Hệ thống bán hàng online
+
+1. Mô tả
+Hệ thống bán hàng trực tuyến phù hợp cho các mô hình kinh doanh mà ở đó mỗi người dùng có thể vừa bán hàng vừa mua hàng.
+2. Các chức năng chính của hệ thống
+2.1 Các yêu cầu chức năng
++ Đăng ký/ Đăng nhập vào hệ thống
++ Tạo sản phẩm với với hình ảnh/ miêu tả/ giá cả.
++ Người dùng chọn mua sản phẩm trực tiếp người bán
++ Lưu lịch sử mua bán
+2.2 Các yêu cầu phi chức năng
++ Website ổn định 24/24
++ Yêu cầu bảo mật cho người dùng
++ Chỉ người mua sản phẩm mới có thể chỉnh sửa thông tin các sản phẩm của mình
+3. Công nghệ sử dụng
+- Sử dụng mô hình MVC
+- Ngôn ngữ Ruby với framework Rails
+- Sử dụng framework Bootstrap để thiết kế giao diện
+
+Các thành viên trong nhóm
+- Nguyễn Việt Hưng
+- Nguyễn Vũ Hoàng Vương
+- Đặng Quang Trung
+- Nguyễn Thành Nhân
