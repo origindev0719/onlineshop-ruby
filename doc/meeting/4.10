@@ -1,0 +1,6 @@
+Task
++ Add function and fix bug
+Details
++ Completed demo version with buy function work successfully
++ Vuong will try to fix a bug about Price's value domain when advertising new product. Also, he will try to add the additional function "Adding picture via Dropbox".
++ Hung will add the additional function "Paying by Stripe account".
